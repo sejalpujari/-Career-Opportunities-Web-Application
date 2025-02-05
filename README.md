@@ -11,4 +11,3 @@ Admin Panel: Manage posts and activities.
 Tech Stack
 Backend: Django
 Frontend: Bootstrap, JavaScript, HTML, CSS
-Database: MySQL
