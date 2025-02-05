@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class="container-fluid p-0 mb-3">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Software Engineer Slide -->
+      <div class="carousel-item active">
+        <img src="https://media.istockphoto.com/id/1552875565/photo/programming-coding-and-man-with-focus-hologram-and-trading-with-cyber-security-futuristic-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=kDl6LkUcVrUP3MJwv17F2jsAndTroskw-ulbWDBI17E=" class="d-block w-100" alt="Software Engineer" style="width: 100%; height: 350px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;">
+          <h5>Software Engineer</h5>
+          <p>A professional who designs and develops software applications.</p>
+        </div>
+      </div>
+
+      <!-- Graphic Designer Slide -->
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1057613484/photo/image-of-female-creative-graphic-designer-working-on-color-selection-and-drawing-on-graphics.webp?a=1&b=1&s=612x612&w=0&k=20&c=nAs5cjpwVIW9scWk22wGGyGb5hkq0Mw5ppMPkz__J1I=" class="d-block w-100" alt="Graphic Designer" style="width: 100%; height: 350px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;">
+          <h5>Graphic Designer</h5>
+          <p>A creative professional responsible for visual design and branding.</p>
+        </div>
+      </div>
+
+      <!-- Data Scientist Slide -->
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Data Scientist" style="width: 100%; height: 350px; object-fit: cover;">
+        <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px;">
+          <h5>Data Scientist</h5>
+          <p>A person who analyzes and interprets complex data to help businesses make decisions.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="text-center mb-4">
+  <h5>Explore the Opportunities</h5>
+</div>
+
+<div class="container">
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://www.leapit.co.uk/wp-content/uploads/2021/11/Cyber-Security-Importance-1080x675-1.jpeg" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">Cyber Security</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount1')">Like <span id="likeCount1">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput1" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput1" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://th.bing.com/th/id/OIP.sPuaJLOPBB26BCTIpvC8BAHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">Data & Analytics</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount2')">Like <span id="likeCount2">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput2" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput2" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://th.bing.com/th/id/OIP._BbbuJp5OmYvzWspC1Wk4AHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">AI & Machine Learning</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount3')">Like <span id="likeCount3">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput3" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput3" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row mt-4">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://th.bing.com/th/id/OIP.1ObWFf1ug5-PlJwSEkmr5AHaEo?w=253&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">Quality Assurance & Testing</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount4')">Like <span id="likeCount4">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput4" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput4" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://th.bing.com/th/id/OIP.iluTdY_2__GZp40TTBfG_AHaFH?w=290&h=200&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">UI/UX Design</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount5')">Like <span id="likeCount5">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput5" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput5" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://th.bing.com/th/id/OIP.SsU_8M8NHrvoEVE7odPf4gHaD5?w=320&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="card-img-top" alt="Card image" width="100%" height="225">
+        <div class="card-body">
+          <p class="card-text">Web Development</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <!-- Like Button -->
+              <button type="button" class="btn btn-sm btn-outline-secondary" onclick="incrementLike('likeCount6')">Like <span id="likeCount6">0</span></button>
+            </div>
+          </div>
+          <!-- Comment Section below the text -->
+          <div class="mt-3">
+            <label for="commentInput6" class="form-label">Add a Comment:</label>
+            <textarea class="form-control" id="commentInput6" rows="3" placeholder="Write your comment here..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // JavaScript function to increment likes
+  function incrementLike(elementId) {
+    const likeCount = document.getElementById(elementId);
+    likeCount.textContent = parseInt(likeCount.textContent) + 1;
+  }
+</script>
+{% endblock %}
